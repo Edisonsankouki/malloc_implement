@@ -19,7 +19,7 @@ enum{
 typedef unsigned char status;
 
 struct heap{/*heap structure*/
-    int32_t block_min_size;/*record hoo small can a block be*/
+    int32_t block_min_size;/*record how small can a block be*/
     int32_t heap_size;/*record heap size*/
     int32_t current_block_num;/*record current block num*/
     void* data_section;/*heapspace*/
