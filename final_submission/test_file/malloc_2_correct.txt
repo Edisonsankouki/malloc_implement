@@ -1,0 +1,3 @@
+allocated 32768
+allocated 16384
+allocated 16384
