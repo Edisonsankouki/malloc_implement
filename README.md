@@ -4,7 +4,7 @@ assignment3
 The information of the heap is represented as a dynamic array which is called the message in the end of the heap. This array is dynamic array like tree which can be modified by the sbrk function.
 And the array is filled with unsigned char which are to distinguish between the allocated and unallocated block and also between each allocated block and free block.
 
-##how virtual_malloc and/or virtual_free and/or virtual_realloc change your state and
+## how virtual_malloc and/or virtual_free and/or virtual_realloc change your state and
 memory layout
 when malloc if the heap is empty, it will get a closest size array for the size you want and perform body allocation algorithm within it to allocate a suitable place for it. if the
 heap is not empty, we will first look at the existing message array and find a suitable place for it. if the current size message array can not fit the size you want, we interatively double the
