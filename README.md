@@ -7,7 +7,7 @@ And the array is filled with unsigned char which are to distinguish between the 
 ## how virtual_malloc and/or virtual_free and/or virtual_realloc change your state and memory layout
 when malloc if the heap is empty, it will get a closest size array for the size you want and perform body allocation algorithm within it to allocate a suitable place for it. if the
 heap is not empty, we will first look at the existing message array and find a suitable place for it. if the current size message array can not fit the size you want, we interatively double the
-size by sbrk until you find it is enough to store. The allocate is to filled the message array with a certain color enum and return the address by counting offset of smallest block.
+size by sbrk until you find it is enough to store. The allocation is to filled the message array with a certain color enum and return the address by counting offset of smallest block.
 when free happends we first set the area to free and then perform merge allocation with its adjacent free block iteratively. 
 The reallocation is just free first and then malloc.
 
