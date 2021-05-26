@@ -1,6 +1,6 @@
 # malloc_implement
 assignment3
-##how you are maintaining the state of the allocation and your memory layout？
+## how you are maintaining the state of the allocation and your memory layout？
 The information of the heap is represented as a dynamic array which is called the message in the end of the heap. This array is dynamic array like tree which can be modified by the sbrk function.
 And the array is filled with unsigned char which are to distinguish between the allocated and unallocated block and also between each allocated block and free block.
 
