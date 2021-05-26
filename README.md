@@ -15,4 +15,4 @@ The reallocation is just free first and then malloc.
 This method is basicly an array tree like structure for storing heap status. The difference is the tree is just partly allocated. We acctually start with a subtree in the whole tree and it will
 keep grow double if the space is not enough. As a result, the amortized space usage will be half less than the static whole tree allocation. And since every min block takes only 1 byte as
 in the message array, the worst case space usage is low. By the way, using byte operation can be 4 times smaller than the current design since we only have 4 kinds of enum you can use 2 bits to 
-represent 1 kind of enum (Well, you can try if you think making your heap shrink is cool.
+represent 1 kind of enum (Well, you can try if you think making your heap shrink is cool.But actually it will eventually cost more time for you and your computer 
